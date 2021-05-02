@@ -8,31 +8,26 @@ namespace UnityEngine
 		public static void Log(object message)
 		{
 			Debug.Send(LogType.Log, message);
-			Debug.unityLogger.Log(LogType.Log, message);
 		}
 
 		public static void LogError(object message)
 		{
 			Debug.Send(LogType.Error, message);
-			Debug.unityLogger.Log(LogType.Error, message);
 		}
 
 		public static void LogException(Exception exception)
 		{
 			Debug.Send(LogType.Exception, exception);
-			Debug.unityLogger.LogException(exception, null);
 		}
 
 		public static void LogWarning(object message)
 		{
 			Debug.Send(LogType.Warning, message);
-			Debug.unityLogger.Log(LogType.Warning, message);
 		}
 
 		public static void LogAssertion(object message)
 		{
 			Debug.Send(LogType.Assert, message);
-			Debug.unityLogger.Log(LogType.Assert, message);
 		}
 
 		public static void Send(LogType type, object message)
