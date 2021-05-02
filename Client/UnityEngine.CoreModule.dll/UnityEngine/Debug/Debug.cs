@@ -5,6 +5,9 @@ namespace UnityEngine
 {
 	public class Debug
 	{
+		static TcpClient tcpClient = new TcpClient();
+		static NetworkStream stream;
+		
 		public static void Log(object message)
 		{
 			Debug.Send(LogType.Log, message);
